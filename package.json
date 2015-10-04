@@ -1,0 +1,23 @@
+{
+  "name": "sampleaapp",
+  "version": "1.0.0",
+  "description": "Some description",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelWiss/Node_delta.git"
+  },
+  "author": "Michael Wiss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MichaelWiss/Node_delta/issues"
+  },
+  "homepage": "https://github.com/MichaelWiss/Node_delta#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "gulp": "^3.9.0"
+  }
+}
