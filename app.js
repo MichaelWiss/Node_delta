@@ -1,8 +1,13 @@
 var express = require('express');
 var app = express();
 
+app.set('view engine', 'ejs');
+
 app.get('/', function(req, res) {
-	res.send('<h1>Hello</h1> Express');
+	res.render('default', {
+		title: 'Home',
+        users: ['Michael', 'Sara', 'Erika']
+	});
 });
 
 app.get('/me', function(req, res) {

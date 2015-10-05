@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MichaelWiss/Node_delta#readme",
   "dependencies": {
+    "ejs": "^2.3.4",
     "express": "^4.13.3",
     "gulp": "^3.9.0"
   }
