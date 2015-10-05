@@ -3,22 +3,25 @@ var app = express();
 
 app.set('view engine', 'ejs');
 
+app.locals.pagetitle = "Awesome Website ";
+
 app.get('/', function(req, res) {
 	res.render('default', {
 		title: 'Home',
+		classname: 'home',
         users: ['Michael', 'Sara', 'Erika']
 	});
 });
 
-app.get('/me', function(req, res) {
-	res.send('@planetoftheweb');
+app.get('/about', function(req, res) {
+	res.render('default', {
+		title: 'About Us',
+		classname: 'about',
+	});
 });
 
-app.get('/who/:name?/:title?', function(req, res) {
-	var name = req.params.name;
-	var title = req.params.title;
-	res.send(name + ' was here' + '<br>title: '+title + '</br>');
-});
+
+
 
 app.get('*', function(req, res) {
 	res.send('Bad Route');
