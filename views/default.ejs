@@ -10,6 +10,15 @@
        <p>Twee tousled letterpress locavore mustache, Pitchfork sartorial fingerstache butcher meh bitters. Polaroid hashtag keytar, pour-over next level Vice Odd Future Thundercats tilde Helvetica VHS gastropub. Meh taxidermy biodiesel mixtape letterpress ugh. Irony chambray cronut, Echo Park next level cardigan authentic farm-to-table fap health goth. Blue Bottle +1 distillery asymmetrical, Pitchfork Helvetica dreamcatcher. Kickstarter Schlitz next level, listicle sustainable Marfa gluten-free kogi semiotics art party. Hoodie authentic craft beer scenester High Life Shoreditch, blog farm-to-table bespoke cronut.
 
         Squid VHS taxidermy artisan typewriter scenester. Keffiyeh gastropub pork belly, butcher McSweeney's bicycle rights listicle gentrify synth Etsy. Carles swag health goth Etsy, polaroid Helvetica put a bird on it farm-to-table quinoa heirloom Intelligentsia. Meh mixtape try-hard tote bag, meditation semiotics 8-bit pour-over hoodie PBR&B plaid readymade organic blog ugh. Deep v Vice direct trade squid, tattooed leggings aesthetic skateboard gluten-free artisan. Post-ironic wolf flexitarian kitsch, Helvetica Brooklyn occupy. Forage roof party four loko, Neutra Vice street art Kickstarter listicle fixie disrupt pork belly kitsch beard.
+
+        <% if (typeof(users) !== 'undefined') { %>
+            <ul>
+              <% for(var i=0; i<users.length; i++) { %>
+              <li><%= users[i] %></li>
+              <% } %>
+              </ul>
+        <% } %>
+
       </p>
     </div><!-- container -->
 
